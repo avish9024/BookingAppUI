@@ -1,0 +1,31 @@
+ <form [formGroup]="loginForm" name="loginForm" (ngSubmit)="onLogin(loginForm.value)">
+ <div class="row header-offset">
+    <div class="col-sm-4">
+
+    </div>
+    <div class="col-sm-4 text-center">
+      
+        <mat-card>
+            <mat-card-title>
+              <h2>Login portal</h2>
+            </mat-card-title>
+            <mat-card-content>
+                <mat-form-field appearance="legacy" class="full-row">
+                    <mat-label>Enter your email id</mat-label>
+                    <input matInput formControlName="emailId" placeholder="Please enter your emailId">
+                  </mat-form-field>
+                  <br>
+                  <mat-form-field appearance="standard"  class="full-row">
+                    <mat-label>Enter your password</mat-label>
+                    <input matInput [type]="hide ? 'text' : 'password'" formControlName="password" placeholder="Please enter your password">
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                    <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+                  </mat-form-field>
+                  <br>
+                  <button type="submit" class="btn btn-primary">Login</button>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div> 
+</form>

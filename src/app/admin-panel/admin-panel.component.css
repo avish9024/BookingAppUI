@@ -1,0 +1,16 @@
+.right-button{
+    margin-left: 800px;
+    margin-right:100px;
+    
+}
+.button-center{
+    margin-left: 600px;
+    margin-right:100px;
+}
+.header-offset{
+    height: 40vh;
+    margin-top: 5px;
+}
+.full-row{
+    width: 100%;
+}

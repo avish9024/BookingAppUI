@@ -1,0 +1,21 @@
+.header-offset{
+    margin-top: 200px;
+    margin-left: 200px;
+}
+.example-header-image {
+    background-image: url('src/assets/images/slider-1.jpg');
+    background-size: cover;
+}
+example-hotel-image {
+    background-image: url('src/assets/images/slider-3.jpg');
+    background-size: cover;
+}
+.mat-grid-tile {
+    background: lightblue;
+}
+.card-place {
+    margin-top: 120px;
+    margin-left: 200px;
+    margin-right: 100px;
+}
+  

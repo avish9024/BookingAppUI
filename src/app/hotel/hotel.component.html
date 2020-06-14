@@ -1,0 +1,48 @@
+<mat-card class="example-card card-place" *ngFor="let hotel of Hotels">
+    <div class="row " >
+        <div class="col-sm-6">
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{ hotel.hotelName }}</mat-card-title>
+                <mat-card-subtitle>{{ hotel.city }}</mat-card-subtitle>
+            </mat-card-header>
+            <br> 
+            <mat-grid-list cols="2" rowHeight="5:1">
+                <mat-grid-tile>
+                    <mat-icon>check_circle_outline</mat-icon> Free WI-FI
+                </mat-grid-tile>
+                <mat-grid-tile>Ratings</mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-icon>check_circle_outline</mat-icon>AC Available
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-icon>check_circle_outline</mat-icon>Couple Allowed
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-icon>check_circle_outline</mat-icon>AC Available
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <mat-icon>check_circle_outline</mat-icon>{{ hotel.costOfStay }}
+                </mat-grid-tile>
+            </mat-grid-list>
+            <br>
+            <mat-card-actions style="margin-bottom: 5%;">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary" (click)="addReview = !addReview">Add Review</button>
+                    <button type="button" class="btn btn-success">Delete Review</button>
+                    <button type="button" class="btn btn-success">View Review</button>
+                </div>
+            </mat-card-actions>
+        </div>
+        <div class="col-sm-6">
+            <div class="carousel-inner">
+                <div class="item active">
+                  <img src="assets/images/slider-3.jpg" alt="Los Angeles">
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12" *ngIf="addReview">
+             
+        </div>
+    </div>
+</mat-card>

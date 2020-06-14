@@ -1,0 +1,52 @@
+<div class="row">
+  <div class="col-sm-12">
+    <form [formGroup]="hotelForm" name="hotelForm" (ngSubmit)="findHotels(hotelForm.value)">
+      <div class="col-sm-12" style="padding: 100px;">
+           
+             <mat-form-field appearance="standard">
+              <mat-label>LOCATION</mat-label>
+              <input matInput placeholder="ENTER LOCATION" formControlName="locations">
+            </mat-form-field>
+             <mat-form-field class="main-search">
+              <mat-label>FACILITIES</mat-label>
+              <mat-select formControlName="facilities" [(value)]="selected" multiple>
+                <mat-option value=1>AC</mat-option>
+                <mat-option value=2>WIFI</mat-option>
+                <mat-option value=3>RESTAURANTS</mat-option>
+                <mat-option value=4>MEALS INCLUDED</mat-option>
+                <mat-option value=5>AVAILABILITY</mat-option>
+              </mat-select>
+            </mat-form-field>
+             <mat-form-field class="main-search">
+              <mat-label>ROOMS</mat-label>
+              <mat-select  formControlName="rooms" [(value)]="selected1">
+        
+                <mat-option value=1>1 Room</mat-option>
+                <mat-option value=2>2 Rooms</mat-option>
+                <mat-option value=3>More</mat-option>
+              </mat-select>
+            </mat-form-field>
+             <mat-form-field class="main-search">
+              <mat-label>STAR</mat-label>
+              <mat-select formControlName="star" [(value)]="selected2">
+        
+                <mat-option value="3">3 STAR</mat-option>
+                <mat-option value="4">4 STAR</mat-option>
+                <mat-option value="5">5 STAR</mat-option>
+              </mat-select>
+            </mat-form-field>
+             <mat-form-field class="main-search">
+              <mat-select formControlName="person" [(value)]="selected3">
+        
+                <mat-option value="1">1</mat-option>
+                <mat-option value="2">2</mat-option>
+                <mat-option value="3">3</mat-option>
+              </mat-select>
+            </mat-form-field>
+            <br>
+      <button class="btn btn-success" type="submit">Check Availability</button>
+        
+     </div> 
+     </form>
+  </div>
+</div>

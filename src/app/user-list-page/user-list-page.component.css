@@ -1,0 +1,20 @@
+p {
+    font-family: Lato;
+  }
+  
+  .example-card {
+    max-width: 800px;
+    max-height: 20px;
+    padding-left: 120px;
+    margin: 4px
+  }
+  
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  .header-offset{
+    height: 60vh;
+    margin-top: 75px;
+}

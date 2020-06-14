@@ -1,0 +1,29 @@
+<mat-card class="example-card" *ngFor="let user of users">
+    <div class="row header-offset" >
+        <div class="col-sm-8 ">
+	       <mat-card-header>
+            
+		     <div mat-card-avatar class="example-header-image"></div>
+		     <mat-card-title>User Name is {{user.fullName}}</mat-card-title>
+             <mat-card-subtitle>EmailId is {{user.emailId}}</mat-card-subtitle>
+             <mat-card-subtitle>City is {{user.city}}</mat-card-subtitle>
+
+            </mat-card-header>
+        </div>
+        <div class="col-sm-4">
+            <mat-card-actions style="margin-bottom: 5%;">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary" (click)="deleteUserDetails(user.emailId)">Delete</button>
+                </div>
+            </mat-card-actions>
+        </div>
+        <div class="col-sm-4">
+            <mat-card-actions style="margin-bottom: 5%;">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary" (click)="updateUserDetails(user)">Update</button>
+                </div>
+            </mat-card-actions>
+        </div>
+        
+    </div>
+</mat-card>

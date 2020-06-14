@@ -1,0 +1,14 @@
+
+.main-search mat-label{
+    color: black;
+    font-weight: bold;
+}
+
+.main-search input{
+    color: white;
+    font-weight: bold;
+}
+.main-search .default-input {
+    color: black;
+    font-weight: bold;
+}
